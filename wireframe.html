@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wireframe Toko Online - Desktop & Mobile</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, sans-serif; background: #fff; color: #222; padding: 24px; width: 1500px; }
+  h1 { font-size: 22px; margin-bottom: 4px; }
+  .sub { color: #666; margin-bottom: 20px; font-size: 14px; }
+  .wrap { display: flex; gap: 40px; align-items: flex-start; }
+  h2 { font-size: 16px; margin-bottom: 8px; }
+  .frame { border: 2px solid #333; background: #fafafa; position: relative; }
+  .desktop { width: 760px; }
+  .mobile { width: 280px; }
+  .blk { border: 1.5px dashed #555; background: #f0f0f0; margin: 8px; padding: 8px; position: relative; font-size: 12px; display: flex; align-items: center; justify-content: center; text-align: center; }
+  .row { display: flex; }
+  .row .blk { flex: 1; }
+  .n { position: absolute; top: -9px; left: -9px; width: 20px; height: 20px; border-radius: 50%; background: #e91e63; color: #fff; font-size: 11px; font-weight: bold; display: flex; align-items: center; justify-content: center; }
+  .img { background: #ddd; }
+  .legend { width: 360px; font-size: 13px; }
+  .legend h2 { margin-bottom: 10px; }
+  .legend li { list-style: none; margin-bottom: 9px; display: flex; gap: 8px; }
+  .legend .n { position: static; flex: none; }
+  .legend b { display: block; }
+</style>
+</head>
+<body>
+<h1>Wireframe Toko Online "Tokoku"</h1>
+<p class="sub">Versi Desktop & Mobile beserta anotasi fungsi area (nomor merah = lihat legenda di kanan)</p>
+
+<div class="wrap">
+
+  <!-- DESKTOP -->
+  <div>
+    <h2>Desktop (&ge; 900px)</h2>
+    <div class="frame desktop">
+      <div class="row">
+        <div class="blk" style="flex:.6;height:44px"><span class="n">1</span>Logo</div>
+        <div class="blk" style="flex:2;height:44px"><span class="n">2</span>Kolom Pencarian [ Cari ]</div>
+        <div class="blk" style="flex:.8;height:44px"><span class="n">3</span>Keranjang</div>
+      </div>
+      <div class="blk" style="height:34px"><span class="n">4</span>Beranda | Kategori | Produk | Promo | Kontak</div>
+      <div class="blk" style="height:130px"><span class="n">5</span>Banner Promo + Judul + [ Tombol Belanja ]</div>
+      <div class="row">
+        <div class="blk" style="height:60px"><span class="n">6</span>Kategori 1</div>
+        <div class="blk" style="height:60px">Kategori 2</div>
+        <div class="blk" style="height:60px">Kategori 3</div>
+        <div class="blk" style="height:60px">Kategori 4</div>
+      </div>
+      <div class="row">
+        <div class="blk" style="flex-direction:column;height:150px"><span class="n">7</span><div class="blk img" style="width:100%;height:70px;margin:0">Foto</div>Nama<br>Harga [Beli]</div>
+        <div class="blk" style="flex-direction:column;height:150px"><div class="blk img" style="width:100%;height:70px;margin:0">Foto</div>Nama<br>Harga [Beli]</div>
+        <div class="blk" style="flex-direction:column;height:150px"><div class="blk img" style="width:100%;height:70px;margin:0">Foto</div>Nama<br>Harga [Beli]</div>
+        <div class="blk" style="flex-direction:column;height:150px"><div class="blk img" style="width:100%;height:70px;margin:0">Foto</div>Nama<br>Harga [Beli]</div>
+      </div>
+      <div class="row">
+        <div class="blk" style="height:46px"><span class="n">8</span>Gratis Ongkir</div>
+        <div class="blk" style="height:46px">Pembayaran Aman</div>
+        <div class="blk" style="height:46px">Garansi Retur</div>
+      </div>
+      <div class="row">
+        <div class="blk" style="height:70px"><span class="n">9</span>Tentang</div>
+        <div class="blk" style="height:70px">Kontak</div>
+        <div class="blk" style="height:70px">Bantuan</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE -->
+  <div>
+    <h2>Mobile (&le; 600px)</h2>
+    <div class="frame mobile">
+      <div class="row">
+        <div class="blk" style="height:40px"><span class="n">1</span>Logo</div>
+        <div class="blk" style="height:40px"><span class="n">3</span>Keranjang</div>
+      </div>
+      <div class="blk" style="height:36px"><span class="n">2</span>Kolom Pencarian [ Cari ]</div>
+      <div class="blk" style="height:44px"><span class="n">4</span>Beranda | Kategori | Produk | Promo | Kontak (menyusun ke bawah jika sempit)</div>
+      <div class="blk" style="height:100px"><span class="n">5</span>Banner Promo<br>[ Tombol Belanja ]</div>
+      <div class="row">
+        <div class="blk" style="height:50px"><span class="n">6</span>Kategori 1</div>
+        <div class="blk" style="height:50px">Kategori 2</div>
+      </div>
+      <div class="row">
+        <div class="blk" style="height:50px">Kategori 3</div>
+        <div class="blk" style="height:50px">Kategori 4</div>
+      </div>
+      <div class="row">
+        <div class="blk" style="flex-direction:column;height:120px"><span class="n">7</span><div class="blk img" style="width:100%;height:50px;margin:0">Foto</div>Nama / Harga</div>
+        <div class="blk" style="flex-direction:column;height:120px"><div class="blk img" style="width:100%;height:50px;margin:0">Foto</div>Nama / Harga</div>
+      </div>
+      <div class="row">
+        <div class="blk" style="flex-direction:column;height:120px"><div class="blk img" style="width:100%;height:50px;margin:0">Foto</div>Nama / Harga</div>
+        <div class="blk" style="flex-direction:column;height:120px"><div class="blk img" style="width:100%;height:50px;margin:0">Foto</div>Nama / Harga</div>
+      </div>
+      <div class="blk" style="height:40px"><span class="n">8</span>Gratis Ongkir</div>
+      <div class="blk" style="height:40px">Pembayaran Aman</div>
+      <div class="blk" style="height:40px">Garansi Retur</div>
+      <div class="blk" style="height:46px"><span class="n">9</span>Tentang</div>
+      <div class="blk" style="height:46px">Kontak</div>
+      <div class="blk" style="height:46px">Bantuan</div>
+    </div>
+  </div>
+
+  <!-- LEGENDA -->
+  <div class="legend">
+    <h2>Anotasi Fungsi Area</h2>
+    <ul>
+      <li><span class="n">1</span><div><b>Logo</b>Identitas toko; klik untuk kembali ke beranda.</div></li>
+      <li><span class="n">2</span><div><b>Pencarian</b>Mencari produk berdasarkan kata kunci.</div></li>
+      <li><span class="n">3</span><div><b>Keranjang</b>Menampilkan jumlah barang yang akan dibeli.</div></li>
+      <li><span class="n">4</span><div><b>Navigasi</b>Menu utama untuk berpindah bagian halaman.</div></li>
+      <li><span class="n">5</span><div><b>Banner Promo</b>Menarik perhatian dengan penawaran utama dan ajakan belanja (CTA).</div></li>
+      <li><span class="n">6</span><div><b>Kategori</b>Jalan pintas menuju kelompok produk (desktop 4 kolom, mobile 2 kolom).</div></li>
+      <li><span class="n">7</span><div><b>Daftar Produk</b>Kartu produk: foto, nama, harga, tombol tambah ke keranjang.</div></li>
+      <li><span class="n">8</span><div><b>Keunggulan</b>Membangun kepercayaan: ongkir, pembayaran, garansi.</div></li>
+      <li><span class="n">9</span><div><b>Footer</b>Informasi toko, kontak, dan bantuan (mobile menyusun ke bawah).</div></li>
+    </ul>
+  </div>
+
+</div>
+</body>
+</html>

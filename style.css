@@ -1,0 +1,76 @@
+/* ===== Reset & dasar ===== */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", Arial, sans-serif; color: #2d2d2d; line-height: 1.5; background: #fafafa; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+.container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+.section { padding-top: 40px; padding-bottom: 10px; }
+.section h2 { margin-bottom: 20px; font-size: 1.5rem; }
+
+/* ===== Header ===== */
+.header { background: #fff; border-bottom: 1px solid #e5e5e5; padding: 14px 0; }
+.header-inner { display: flex; align-items: center; gap: 20px; }
+.logo { font-size: 1.6rem; font-weight: 700; }
+.logo span { color: #e91e63; }
+.search { flex: 1; display: flex; }
+.search input { flex: 1; padding: 10px 14px; border: 1px solid #ccc; border-radius: 6px 0 0 6px; }
+.search button { padding: 10px 18px; border: none; background: #e91e63; color: #fff; border-radius: 0 6px 6px 0; cursor: pointer; }
+.cart { font-weight: 600; white-space: nowrap; }
+
+/* ===== Navigasi ===== */
+.nav { background: #e91e63; }
+.nav ul { display: flex; gap: 8px; }
+.nav a { display: block; padding: 12px 16px; color: #fff; font-weight: 500; }
+.nav a:hover { background: rgba(0, 0, 0, .15); }
+
+/* ===== Hero ===== */
+.hero { background: linear-gradient(135deg, #fce4ec, #f8bbd0); padding: 70px 0; }
+.hero h1 { font-size: 2.2rem; margin-bottom: 10px; }
+.hero p { margin-bottom: 20px; font-size: 1.1rem; }
+.btn { display: inline-block; padding: 12px 26px; background: #e91e63; color: #fff; border-radius: 6px; font-weight: 600; }
+.btn:hover { background: #c2185b; }
+
+/* ===== Kategori ===== */
+.categories { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.category { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 26px 10px; text-align: center; font-weight: 600; }
+.category:hover { border-color: #e91e63; color: #e91e63; }
+
+/* ===== Produk ===== */
+.products { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+.product { background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 14px; }
+.product-img { height: 140px; background: #eee; border-radius: 6px; display: flex; align-items: center; justify-content: center; color: #999; margin-bottom: 10px; }
+.product h3 { font-size: 1rem; }
+.price { color: #e91e63; font-weight: 700; margin: 6px 0 10px; }
+.product button { width: 100%; padding: 9px; border: 1px solid #e91e63; background: #fff; color: #e91e63; border-radius: 6px; cursor: pointer; font-weight: 600; }
+.product button:hover { background: #e91e63; color: #fff; }
+
+/* ===== Keunggulan ===== */
+.benefits { background: #fff; margin-top: 40px; padding: 30px 0; border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; }
+.benefits-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; text-align: center; }
+.benefit strong { display: block; font-size: 1.05rem; }
+.benefit span { color: #666; font-size: .9rem; }
+
+/* ===== Footer ===== */
+.footer { background: #2d2d2d; color: #ddd; padding: 36px 0 14px; }
+.footer-inner { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.footer h4 { color: #fff; margin-bottom: 8px; }
+.footer p { font-size: .92rem; }
+.copy { text-align: center; margin-top: 26px; font-size: .85rem; color: #999; }
+
+/* ===== Responsif: Tablet ===== */
+@media (max-width: 900px) {
+  .products { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* ===== Responsif: Mobile ===== */
+@media (max-width: 600px) {
+  .header-inner { flex-wrap: wrap; gap: 10px; }
+  .search { order: 3; flex-basis: 100%; }
+  .nav ul { flex-wrap: wrap; }
+  .nav a { padding: 10px 12px; }
+  .hero { padding: 44px 0; }
+  .hero h1 { font-size: 1.6rem; }
+  .categories { grid-template-columns: repeat(2, 1fr); }
+  .products { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .benefits-inner, .footer-inner { grid-template-columns: 1fr; }
+}
